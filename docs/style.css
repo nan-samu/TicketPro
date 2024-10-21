@@ -14,6 +14,34 @@ body {
 }
 
 /* ============================================================================================================= */
+/* Responsividade navegação */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .logo {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-right: 0;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+/* ============================================================================================================= */
 /* Tela da Homepage */
 
 header {
@@ -123,6 +151,39 @@ nav ul li a:hover {
     font-size: 20px;
     padding: 20px;
 }
+
+/* ============================================================================================================= */
+/* responsividade homepage */
+
+@media (max-width: 992px) {
+    .container-home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #img-home {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #texto-home {
+        padding: 20px;
+    }
+
+    #h1-ola {
+        font-size: 28px;
+    }
+
+    #h1-ola .ola {
+        font-size: 40px;
+    }
+
+    #h1-ola .bem-vindo {
+        font-size: 20px;
+    }
+}
+
 
 /* ============================================================================================================= */
 /* Tela Login */
@@ -261,6 +322,35 @@ nav ul li a:hover {
 #codewave {
     color: #11C870;
 }
+
+/* ============================================================================================================= */
+/* Responsividade Tela Login */
+
+@media (max-width: 992px) {
+    .container-login, .container-cad {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .retangulo, .retangulo2 {
+        display: none; /* Ocultar imagem de fundo em telas menores */
+    }
+
+    .fundo-form, .fundo-form2 {
+        margin: 0 auto; /* Centraliza o formulário */
+        width: 90%; /* Mantém o formulário responsivo */
+        max-width: 400px; /* Define um tamanho máximo padronizado */
+        height: auto;
+    }
+
+    .fundo-form h1, .fundo-form2 h1 {
+        font-size: 4vh;
+        margin-top: 2vh;
+        text-align: center; /* Centraliza o título */
+    }
+}
+
+
 
 /* ============================================================================================================= */
 /* Tela de Cadastro */
@@ -403,6 +493,35 @@ nav ul li a:hover {
 #codewave2 {
     color: #11C870;
 }
+
+/* ============================================================================================================= */
+/* Responsividade Tela de Cadastro */
+
+@media (max-width: 992px) {
+    .container-login, .container-cad {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .retangulo, .retangulo2 {
+        display: none; /* Ocultar imagem de fundo em telas menores */
+    }
+
+    .fundo-form, .fundo-form2 {
+        margin: 0 auto; /* Centraliza o formulário */
+        width: 90%; /* Mantém o formulário responsivo */
+        max-width: 400px; /* Tamanho máximo para padronizar */
+        height: auto;
+    }
+
+    .fundo-form h1, .fundo-form2 h1 {
+        font-size: 4vh;
+        margin-top: 2vh;
+    }
+}
+
+
+
 
 /* ============================================================================================================= */
 /* Tela Sistema do Usuário */
@@ -613,6 +732,31 @@ nav ul li a:hover {
     margin-top: auto; 
     padding: 10px;
 }
+
+/* ============================================================================================================= */
+/* Responsividade Tela Sistema do Usuário */
+
+@media (max-width: 992px) {
+    .container-pginicial, .container-criar-chamado, .container-chamados {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar1, .sidebar2, .sidebar3 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .main-content1, .main-content2, .main-content3 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .status-panel1 {
+        margin: 20px 0;
+    }
+}
+
 /* ==================================================================================================================== */
 /* Tela Criar Chamado */
 .container-criar-chamado {
@@ -901,4 +1045,38 @@ textarea {
     text-align: center;
     margin-top: auto;
     padding: 10px;
+}
+
+/* ========================================================================================================================== */
+/* Responsividade Tela Chamados */
+
+@media (max-width: 992px) {
+    .container-pginicial, .container-criar-chamado, .container-chamados {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar1, .sidebar2, .sidebar3 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .main-content1, .main-content2, .main-content3 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .ret {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .status-panel1 {
+        margin: 20px 0;
+    }
+
+    .description-bar select {
+        width: 100%;
+        margin-right: 0;
+    }
 }
