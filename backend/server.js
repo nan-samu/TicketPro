@@ -12,9 +12,10 @@ app.use(bodyParser.json());
 
 // Conectar ao MongoDB
 const mongoURI = 'mongodb+srv://ticketUser:Qpalzm%402020@ticket-pro-cluster.lozrl.mongodb.net/?retryWrites=true&w=majority&appName=ticket-pro-cluster';
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+    mongoose.connect(mongoURI)
     .then(() => console.log('Conectado ao banco de dados'))
     .catch(err => console.log(err));
+
 
 // Definição do esquema do chamado
 const chamadoSchema = new mongoose.Schema({
