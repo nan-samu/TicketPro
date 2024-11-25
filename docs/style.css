@@ -354,6 +354,11 @@ nav ul li a:hover {
 }
 
 #bt-email {
+    margin-top: 2vh;
+    margin-left: 2rem;
+}
+
+#bt-email2 {
     margin-top: 5vh;
     margin-left: 2rem;
 }
