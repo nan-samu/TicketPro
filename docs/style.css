@@ -208,18 +208,18 @@ nav ul li a:hover {
     padding-left: 8vh;
 }
 
-#bt-usu {
+#bt-email {
     margin-top: 3vh;
 }
 
 #bt-senha {
     margin-top: 2vh;
-    margin-left: 4rem;
+    margin-left: 2rem;
 }
 
 .fundo-form button {
     height: 8vh;
-    margin-left: 4rem;
+    margin-left: 2rem;
     width: 45vh;
     font-size: 3vh;
     font-weight: 600;
@@ -314,7 +314,7 @@ nav ul li a:hover {
 }
 
 .fundo-form2 {
-    width: 90vh;
+    width: 80vh;
     height: 80vh;
     background-color: #ffffff;
     border-radius: 5vh;
@@ -350,23 +350,23 @@ nav ul li a:hover {
 
 #bt-usu2 {
     margin-top: 7vh;
-    margin-left: 4rem;
+    margin-left: 2rem;
 }
 
 #bt-email {
     margin-top: 2vh;
-    margin-left: 4rem;
+    margin-left: 2rem;
 }
 
 #bt-senha2 {
-    margin-top: 6vh;
-    margin-left: 4rem;
+    margin-top: 2vh;
+    margin-left: 2rem;
 }
 
 .fundo-form2 button {
     height: 8vh;
     width: 45vh;
-    margin-left: 4rem;
+    margin-left: 2rem;
     font-size: 3vh;
     font-weight: 600;
     background: linear-gradient(45deg, #079350, #0CAB5E, #11C870);
