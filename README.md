@@ -6,6 +6,8 @@
 - Samuel Fernandes
 - Gabriel Lyno
 
+Figma: https://www.figma.com/design/B9EuGkn0scFT3o4IaybdDW/Sistema-de-Chamados?node-id=16-124&t=phdEDm5P9vFD1fPq-1
+
 ---
 
 ## 📋 Visão Geral
