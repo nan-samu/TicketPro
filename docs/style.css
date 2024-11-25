@@ -411,8 +411,6 @@ nav ul li a:hover {
 }
 
 /* ============================================================================================================= */
-/* Tela Sistema do Usuário */
-
 /* Tela Pagina Inicial */
 .container-pginicial {
     display: flex;
@@ -667,8 +665,6 @@ nav ul li a:hover {
     background: linear-gradient(45deg, #11C870, #11C870, #11C870);
 }
 
-
-/* Configurações */
 .config-content {
     margin: 20px auto;
     width: 90%;
@@ -707,7 +703,7 @@ nav ul li a:hover {
 
 .bt-criar-chamado {
     display: block;
-    width: 100%;
+    width: auto;
     padding: 12px;
     background-color: #28a745;
     color: white;
@@ -717,7 +713,6 @@ nav ul li a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
 }
 
 .bt-criar-chamado:hover {
@@ -889,8 +884,8 @@ textarea {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 100px;
-    margin-top: 20px
+    width: auto;
+        margin-top: 10px;
 }
 
 .btn:hover {
@@ -1027,34 +1022,8 @@ textarea {
     padding: 10px;
 }
 
-/* Resetando e base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
-/* Layout */
 .container-pginicial {
     display: flex;
-}
-
-.sidebar1 {
-    width: 250px;
-    background-color: #333;
-    color: white;
-    padding: 15px;
-}
-
-/* style.css */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -1119,12 +1088,16 @@ body {
     gap: 30px;
 }
 
-/* Estilo para o container de chamados */
 #chamados-list {
     margin-top: 20px;
 }
 
 .chamado-item {
+    display: grid;
+    width: auto;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 15px;
@@ -1161,7 +1134,6 @@ body {
     color: #666;
 }
 
-/* Estilo para o botão de excluir */
 .excluir-btn {
     background-color: #f44336;
     color: white;
@@ -1172,23 +1144,12 @@ body {
     font-size: 0.9em;
     margin-left: 10px;
 }
-/* Estilo básico */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
 
-/* Container principal */
 .container-edit-chamado {
     display: flex;
     min-height: 100vh;
 }
 
-
-
-/* Sidebar */
 .sidebar {
     width: 250px;
     background-color: #0db564;
@@ -1232,7 +1193,6 @@ body {
     color: #42b983;
 }
 
-/* Main content */
 .main-content {
     flex-grow: 1;
     padding: 30px;
@@ -1246,7 +1206,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Formulário */
 .form-group {
     margin-bottom: 20px;
 }
@@ -1300,7 +1259,6 @@ button {
     background-color: #e53935;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .container-edit-chamado {
         flex-direction: column;
@@ -1316,13 +1274,10 @@ button {
     }
 }
 
-
 .excluir-btn:hover {
     background-color: #e53935;
 }
 
-
-/* Estilo para o botão de editar */
 .editar-btn {
     background-color: #4CAF50;
     color: white;
@@ -1338,35 +1293,8 @@ button {
     background-color: #45a049;
 }
 
-
-
-.header3 {
-    margin-bottom: 40px; /* Adiciona espaço abaixo do header */
-    padding-bottom: 10px; /* Espaçamento interno opcional */
-    border-bottom: 1px solid #ddd; /* Linha opcional para separar o header */
-
-}
-
-
-.sidebar1 a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-}
-
-
-/* Header */
 .main-content1 {
     flex-grow: 1;
-    padding: 20px;
-}
-
-.header1 {
-    background-color: #ffffff;
-    color: white;
-    padding: 10px;
-    text-align: center;
 }
 
 .chamados-lista {
@@ -1383,13 +1311,6 @@ button {
     padding: 10px;
     border-radius: 60px;
     box-shadow: 0 0 10px rgba(8, 8, 8, 0.1);
-}
-
-/* Rodapé */
-#creditos {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 12px;
 }
 
 #codewave {
