@@ -41,3 +41,28 @@ Estamos sempre abertos a sugestões e melhorias. Se você tiver alguma ideia ou 
 ## 📞 Contato
 
 Para mais informações, entre em contato com o time **CodeWave**.
+
+## Como Rodar o Back-End
+
+Rodar no terminal do VS Code:
+
+```bash
+    npm install express
+    npm install mongoose
+    npm install cors
+    npm install body-parser
+    npm install bcryptjs
+    npm install jsonwebtoken
+```
+
+Depois de instalar digite no terminal:
+
+```bash
+    cd backend
+```
+
+E para rodar digite:
+
+```bash
+    npx nodemon server.js
+```
