@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo-verde.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Criar Chamado - TicketPro</title>
+</head>
+
+<body>
+    <div class="container-criar-chamado">
+
+        <div class="sidebar2">
+
+            <div class="logo-pg-inicial2">
+                <a href="pagina-inicial.html">
+                    <img src="img/logo-branca.png" alt="logo-img">
+                    <h2>TicketPro</h2>
+                </a>
+            </div>
+
+            <ul>
+                <li><a href="pagina-inicial.html"><i class="fas fa-home2"></i>Página Inicial</a></li>
+                <li><a href="criar-chamado.html"><i class="fas fa-plus-circle2"></i>Criar Chamado</a></li>
+                <li><a href="chamados.html"><i class="fas fa-ticket-alt2"></i>Chamados</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content2">
+            <div class="header2">
+                <h1>Criar Chamado</h1>
+                <div class="user-info2">
+                    <span id="user-name">Carregando...</span>
+                    <div class="user-avatar1" id="user-avatar"></div>
+                </div>
+            </div>
+        
+        <div class="ret">
+            <div class="form-group">
+                <label for="urgencia">Urgência</label>
+                <select id="urgencia">
+                    <option>Nível da Urgência</option>
+                    <option>Baixa</option>
+                    <option>Média</option>
+                    <option>Alta</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="tipo">Tipo</label>
+                <select id="tipo">
+                    <option>----------</option>
+                    <option>Problema</option>
+                    <option>Dúvida</option>
+                    <option>Solicitação</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="categoria">Categoria</label>
+                <select id="categoria">
+                    <option>----------</option>
+                    <option>Hardware</option>
+                    <option>Software</option>
+                    <option>Rede</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" placeholder="Campo Obrigatório*">
+            </div>
+    
+            <div class="form-group">
+                <label for="descricao">Descrição</label>
+                <div class="description-bar">
+                    <select>
+                        <option>Simples</option>
+                        <option>Avançado</option>
+                    </select>
+                    <span class="file-info">Arquivo(s) Max 2 MB</span>
+                </div>
+                <textarea id="descricao" placeholder="Campo Obrigatório*"></textarea>
+            </div>
+    
+            <button type="submit" id="enviar-chamado-btn" class="btn">Enviar Chamado</button>
+
+            </div>
+
+            <h2 id="creditos">
+                Desenvolvido por <span id="codewave">CodeWave Stúdio</span>
+            </h2>
+
+        </div>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h3>O que deseja fazer?</h3>
+                <button id="logout-btn">Encerrar Sessão</button>
+                <button id="change-info-btn">Configurações</button>
+            </div>
+        </div>
+    
+
+        <script src="criar-chamado.js" defer></script>
+
+</body>
+
+</html>

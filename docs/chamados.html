@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo-verde.png" type="image/x-icon">
+    <title>Histórico de Chamados - TicketPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-chamados">
+        <div class="sidebar3">
+            <div class="logo-pg-inicial3">
+                <a href="pagina-inicial.html">
+                    <img src="img/logo-branca.png" alt="logo-img">
+                    <h2>TicketPro</h2>
+                </a>
+            </div>
+            <ul>
+                <li><a href="pagina-inicial.html"><i></i>Página Inicial</a></li>
+                <li><a href="criar-chamado.html"><i></i>Criar Chamado</a></li>
+                <li><a href="chamados.html"><i></i>Chamados</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content3">
+            <div class="header3">
+                <h1>Histórico de Chamados</h1>
+                <div class="user-info3">
+                    <span id="user-name">Carregando...</span>
+                    <div class="user-avatar1" id="user-avatar"></div>
+                </div>
+            </div>
+
+            <div id="chamados-list">
+                <!-- Lista de chamados será carregada aqui -->
+            </div>
+
+            <h2 id="creditos">
+                Desenvolvido por <span id="codewave">CodeWave Stúdio</span>
+            </h2>
+        </div>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h3>O que deseja fazer?</h3>
+                <button id="logout-btn">Encerrar Sessão</button>
+                <button id="change-info-btn">Configurações</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="chamados.js" defer></script>
+</body>
+
+</html>

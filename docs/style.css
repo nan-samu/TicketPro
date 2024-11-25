@@ -1,0 +1,1397 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+}
+
+/* ============================================================================================================= */
+/* Tela da Homepage */
+
+header {
+    height: 70px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #11C870;
+    color: #ffffff;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    margin-left: 10px;
+    font-size: 26px;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+}
+
+.logo img {
+    width: 45px;
+    height: auto;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+nav ul {
+    margin-right: 30px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+nav ul li a {
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #11C870;
+    border-radius: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid #ffffff;
+}
+
+nav ul li a:hover {
+    background-color: #11C870;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.container-home {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+#img-home {
+    max-width: 100%;
+    width: 550px;
+    height: auto;
+}
+
+#texto-home {
+    font-family: 'Lato', sans-serif;
+    color: #555555;
+    font-weight: 400;
+    padding: 40px;
+    margin: 2%;
+}
+
+#h1-ola {
+    font-size: 34px;
+}
+
+#h1-ola .ola {
+    font-size: 50px;
+}
+
+#h1-ola .bem-vindo {
+    margin-left: 10px;
+}
+
+#h1-ola .ticketpro {
+    color: #11C870;
+    font-weight: bold;
+}
+
+#texto-home h2 {
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+}
+
+/* ============================================================================================================= */
+/* Tela Login */
+
+.container-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.retangulo {
+    display: flex;
+    background: linear-gradient(45deg, #079350, #0CAB5E, #11C870);
+    border-top-right-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+    align-items: center;
+    width: 120vh;
+    height: 100vh;
+    margin-right: auto;
+}
+
+.retangulo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.retangulo #img-logo {
+    width: 6vh;
+    height: auto;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    margin-bottom: 89vh;
+}
+
+.retangulo img {
+    height: 75vh;
+    width: auto;
+    margin-left: -30vh;
+}
+
+.retangulo h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 4vh;
+    margin-left: 1.5vh;
+    margin-bottom: 83vh;
+}
+
+.fundo-form {
+    width: 90vh;
+    height: 80vh;
+    background-color: #ffffff;
+    border-radius: 5vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 3vh rgba(0, 0, 0, 20%);
+    padding-top: 20px;
+    position: relative;
+}
+
+.fundo-form h1 {
+    color: #11C870;
+    font-size: 4.5vh;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 9vh;
+}
+
+.fundo-form input {
+    height: 8vh;
+    width: 45vh;
+    border-radius: 10vh;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 2vh rgba(0, 0, 0, 25%);
+    color: #969696;
+    font-size: 2.4vh;
+    font-weight: 200;
+    padding-left: 8vh;
+}
+
+#bt-usu {
+    margin-top: 3vh;
+}
+
+#bt-senha {
+    margin-top: 2vh;
+    margin-left: 4rem;
+}
+
+.fundo-form button {
+    height: 8vh;
+    margin-left: 4rem;
+    width: 45vh;
+    font-size: 3vh;
+    font-weight: 600;
+    background: linear-gradient(45deg, #079350, #0CAB5E, #11C870);
+    box-shadow: 0 0 2vh rgba(0, 0, 0, 25%);
+    color: #ffffff;
+    border-radius: 10vh;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 5vh;
+}
+
+.fundo-form button:hover {
+    background-color: #0ea65f;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.fundo-form p {
+    color: #808080;
+    font-weight: 600;
+    font-size: 2.5vh;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.fundo-form a {
+    text-decoration: none;
+    color: #11C870;
+}
+
+.fundo-form h2 {
+    font-size: 2vh;
+    font-weight: 400;
+    color: #949494;
+    position: absolute;
+    bottom: -60px;
+    text-align: center;
+}
+
+#codewave {
+    color: #11C870;
+}
+
+/* ============================================================================================================= */
+/* Tela de Cadastro */
+
+.container-cad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.retangulo2 {
+    display: flex;
+    background: linear-gradient(45deg, #079350, #0CAB5E, #11C870);
+    border-top-right-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+    align-items: center;
+    width: 150vh;
+    height: 100vh;
+    margin-right: auto;
+}
+
+.retangulo2 a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.retangulo2 #img-logo {
+    width: 6vh;
+    height: auto;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    margin-bottom: 89vh;
+}
+
+.retangulo2 img {
+    height: 78vh;
+    width: auto;
+    margin-left: -19vh;
+}
+
+.retangulo2 h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 4vh;
+    margin-left: 1.5vh;
+    margin-bottom: 83vh;
+}
+
+.fundo-form2 {
+    width: 90vh;
+    height: 80vh;
+    background-color: #ffffff;
+    border-radius: 5vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 3vh rgba(0, 0, 0, 20%);
+    padding-top: 20px;
+    position: relative;
+}
+
+.fundo-form2 h1 {
+    color: #11C870;
+    font-size: 4.5vh;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 9vh;
+}
+
+.fundo-form2 input {
+    height: 8vh;
+    width: 45vh;
+    border-radius: 10vh;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 2vh rgba(0, 0, 0, 25%);
+    color: #969696;
+    font-size: 2.4vh;
+    font-weight: 200;
+    padding-left: 8vh;
+}
+
+#bt-usu2 {
+    margin-top: 7vh;
+    margin-left: 4rem;
+}
+
+#bt-email {
+    margin-top: 2vh;
+    margin-left: 4rem;
+}
+
+#bt-senha2 {
+    margin-top: 6vh;
+    margin-left: 4rem;
+}
+
+.fundo-form2 button {
+    height: 8vh;
+    width: 45vh;
+    margin-left: 4rem;
+    font-size: 3vh;
+    font-weight: 600;
+    background: linear-gradient(45deg, #079350, #0CAB5E, #11C870);
+    box-shadow: 0 0 2vh rgba(0, 0, 0, 25%);
+    color: #ffffff;
+    border-radius: 10vh;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 5vh;
+}
+
+.fundo-form2 button:hover {
+    background-color: #0ea65f;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.fundo-form2 p {
+    color: #808080;
+    font-weight: 600;
+    font-size: 2.5vh;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.fundo-form2 a {
+    text-decoration: none;
+    color: #11C870;
+}
+
+.fundo-form2 h2 {
+    font-size: 2vh;
+    font-weight: 400;
+    color: #949494;
+    position: absolute;
+    bottom: -60px;
+    text-align: center;
+}
+
+#codewave2 {
+    color: #11C870;
+}
+
+/* ============================================================================================================= */
+/* Tela Sistema do Usuário */
+
+/* Tela Pagina Inicial */
+.container-pginicial {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar1 {
+    width: 250px;
+    background: linear-gradient(45deg, #079350, #0CAB5E, #11C870);
+    padding: 20px;
+    color: white;
+}
+
+.logo-pg-inicial {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo-pg-inicial a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-pg-inicial h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.logo-pg-inicial img {
+    width: 45px;
+    height: auto;
+}
+
+.sidebar1 ul {
+    list-style: none;
+    margin-top: 40px;
+}
+
+.sidebar1 ul li {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar1 ul li i {
+    margin-right: 10px;
+}
+
+.sidebar1 ul li:hover {
+    background: linear-gradient(45deg, #099b54, #0db564);
+    cursor: pointer;
+}
+
+.sidebar1 ul li a {
+    color: white;
+    width: 100%;
+    text-decoration: none;
+}
+
+.main-content1 {
+    flex-grow: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 1px 10px #cdcdcd;
+}
+
+.header1 h1 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #333333;
+}
+
+.user-info1 {
+    display: flex;
+    align-items: center;
+}
+
+.user-info1 span {
+    margin-right: 10px;
+}
+
+.user-avatar1 {
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%; 
+    background-color: #11C870;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px; 
+    color: white; 
+    cursor: pointer;
+    margin-left: 10px; 
+}
+
+
+.status-panel1 {
+    background-color: white;
+    padding: 20px;
+    margin: 15vh;
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#content-status {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.status-panel1 h2 {
+    font-size: 24px;
+    color: #333333;
+}
+
+.bt-criar-chamado {
+    background: linear-gradient(45deg, #079350, #0CAB5E, #11C870);
+    color: white;
+    padding: 10px 20px;
+    font-size: 17px;
+    border: 1px solid #11C870;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+.bt-criar-chamado:hover {
+    background: linear-gradient(45deg, #ffffff, #ffffff, #ffffff);
+    color: #11C870;
+    
+}
+
+.status-item1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    color: #333333;
+}
+
+.status-item1:last-child {
+    border-bottom: none;
+}
+
+.status-item1 span {
+    display: flex;
+    align-items: center;
+}
+
+.status-icon1 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.status-new {
+    background-color: green;
+}
+
+.status-in-progress {
+    background-color: orange;
+}
+
+.status-pending {
+    background-color: yellow;
+}
+
+.status-resolved {
+    background-color: black;
+}
+
+.status-deleted {
+    background-color: red;
+}
+
+.status-count1 {
+    background-color: #11C870;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.status-item1 a {
+    color: inherit;
+    width: 100%;
+}
+
+.main-content1 #creditos {
+    font-size: 14px;
+    font-weight: 400;
+    color: #949494;
+    text-align: center;
+    margin-top: auto; 
+    padding: 10px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h3 {
+    margin-bottom: 15px;
+}
+
+.popup-content button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background: linear-gradient(45deg, #079350, #0CAB5E, #11C870);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background: linear-gradient(45deg, #11C870, #11C870, #11C870);
+}
+
+
+/* Configurações */
+.config-content {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.config-content h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.bt-criar-chamado {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.bt-criar-chamado:hover {
+    background-color: #218838;
+}
+
+
+/* ==================================================================================================================== */
+/* Tela Criar Chamado */
+.container-criar-chamado {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar2 {
+    width: 250px;
+    background: linear-gradient(45deg, #079350, #0CAB5E, #11C870);
+    padding: 20px;
+    color: white;
+}
+
+.logo-pg-inicial2 {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo-pg-inicial2 a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-pg-inicial2 h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.logo-pg-inicial2 img {
+    width: 45px;
+    height: auto;
+}
+
+.sidebar2 ul {
+    list-style: none;
+    margin-top: 40px;
+}
+
+.sidebar2 ul li {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar2 ul li i {
+    margin-right: 10px;
+}
+
+.sidebar2 ul li:hover {
+    background: linear-gradient(45deg, #099b54, #0db564);
+    cursor: pointer;
+}
+
+.sidebar2 ul li a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+
+.main-content2 {
+    flex-grow: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 1px 10px #cdcdcd;
+}
+
+.header2 h1 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #333333;
+}
+
+.user-info2 {
+    display: flex;
+    align-items: center;
+}
+
+.user-info2 span {
+    margin-right: 10px;
+}
+
+.user-avatar2 {
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%; 
+    background-color: #11C870;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px; 
+    color: white; 
+    cursor: pointer;
+    margin-left: 10px; 
+}
+
+.ret {
+    margin-left: 15%;
+    padding: 20px;
+    width: calc(100% - 400px);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select, input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid #11C870;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+.description-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.description-bar select {
+    width: 20%;
+    margin-right: 10px;
+}
+
+.file-info {
+    color: #888;
+    font-size: 12px;
+}
+
+.btn {
+    background: linear-gradient(45deg, #079350, #0CAB5E, #11C870);
+    color: white;
+    font-size: 16px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    margin-top: 20px
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #099b54, #0db564);
+}
+
+.main-content2 #creditos {
+    font-size: 14px;
+    font-weight: 400;
+    color: #949494;
+    text-align: center;
+    margin-top: auto; 
+    padding: 10px;
+}
+
+/* ========================================================================================================================== */
+/* Tela Chamados */
+
+.container-chamados {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar3 {
+    width: 250px;
+    background: linear-gradient(45deg, #079350, #0CAB5E, #11C870);
+    padding: 20px;
+    color: white;
+}
+
+.logo-pg-inicial3 {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo-pg-inicial3 a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-pg-inicial3 h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.logo-pg-inicial3 img {
+    width: 45px;
+    height: auto;
+}
+
+.sidebar3 ul {
+    list-style: none;
+    margin-top: 40px;   
+}
+
+.sidebar3 ul li {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar3 ul li i {
+    margin-right: 10px;
+}
+
+.sidebar3 ul li:hover {
+    background: linear-gradient(45deg, #099b54, #0db564);
+    cursor: pointer;
+}
+
+.sidebar3 ul li a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+
+.main-content3 {
+    flex-grow: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.header3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 1px 10px #cdcdcd;
+}
+
+.header3 h1 {
+    font-size: 16px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.user-info3 {
+    display: flex;
+    align-items: center;
+    
+}
+
+.user-info3 span {
+    margin-right: 10px;
+}
+
+.user-avatar3 {
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%; 
+    background-color: #11C870;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px; 
+    color: white; 
+    cursor: pointer;
+    margin-left: 10px; 
+}
+
+.main-content3 #creditos {
+    font-size: 14px;
+    font-weight: 400;
+    color: #949494;
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+}
+
+/* Resetando e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Layout */
+.container-pginicial {
+    display: flex;
+}
+
+.sidebar1 {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+/* style.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.dashboard {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+.chamado-card {
+    border: 1px solid #85d242;
+    border-radius: 8px;
+    margin-left: 40px;
+    margin-bottom: 16px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chamado-card h3 {
+    margin: 0 0 8px;
+    color: #333;
+}
+
+.chamado-card p {
+    margin: 15px 0;
+    color: #666666;
+}
+
+
+#chamados-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Estilo para o container de chamados */
+#chamados-list {
+    margin-top: 20px;
+}
+
+.chamado-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chamado-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chamado-header h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.chamado-status {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.chamado-description {
+    margin-top: 10px;
+}
+
+.chamado-footer {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Estilo para o botão de excluir */
+.excluir-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+/* Estilo básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container principal */
+.container-edit-chamado {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #0db564;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .logo-pg-inicial {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar .logo-pg-inicial img {
+    width: 40px;
+}
+
+.sidebar .logo-pg-inicial h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    color: #42b983;
+}
+
+/* Main content */
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: #42b983;
+    color: white;
+    margin-top: 20px;
+}
+
+.btn-submit:hover {
+    background-color: #388e3c;
+}
+
+.btn-cancel {
+    background-color: #f44336;
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.btn-cancel:hover {
+    background-color: #e53935;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-edit-chamado {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+}
+
+
+.excluir-btn:hover {
+    background-color: #e53935;
+}
+
+
+/* Estilo para o botão de editar */
+.editar-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 15px;
+}
+
+.editar-btn:hover {
+    background-color: #45a049;
+}
+
+
+
+.header3 {
+    margin-bottom: 40px; /* Adiciona espaço abaixo do header */
+    padding-bottom: 10px; /* Espaçamento interno opcional */
+    border-bottom: 1px solid #ddd; /* Linha opcional para separar o header */
+
+}
+
+
+.sidebar1 a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+
+/* Header */
+.main-content1 {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.header1 {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.chamados-lista {
+    margin-top: 20px;
+}
+
+.chamados-lista ul {
+    list-style-type: none;
+}
+
+.chamados-lista li {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 60px;
+    box-shadow: 0 0 10px rgba(8, 8, 8, 0.1);
+}
+
+/* Rodapé */
+#creditos {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+#codewave {
+    color: #2ecc71;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo-verde.png" type="image/x-icon">
+    <title>Editar Chamado - TicketPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-edit-chamado">
+        <div class="sidebar">
+            <div class="logo-pg-inicial">
+                <a href="pagina-inicial.html">
+                    <img src="img/logo-branca.png" alt="logo-img">
+                    <h2>TicketPro</h2>
+                </a>
+            </div>
+            <ul>
+                <li><a href="pagina-inicial.html"><i class="fas fa-home"></i>Página Inicial</a></li>
+                <li><a href="criar-chamado.html"><i class="fas fa-plus-circle"></i>Criar Chamado</a></li>
+                <li><a href="chamados.html"><i class="fas fa-ticket-alt"></i>Chamados</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h1>Editar Chamado</h1>
+            <form id="form-editar-chamado">
+                <div class="form-group">
+                    <label for="titulo">Título</label>
+                    <input type="text" id="titulo" name="titulo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" name="descricao" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <select id="status" name="status">
+                        <option value="Novo">Novo</option>
+                        <option value="Em atendimento">Em atendimento</option>
+                        <option value="Pendente">Pendente</option>
+                        <option value="Solucionado">Solucionado</option>
+                        <option value="Excluído">Excluído</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">Atualizar Chamado</button>
+            </form>
+            <button class="btn-cancel" onclick="window.location.href='chamados.html'">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="editar-chamado.js" defer></script>
+</body>
+</html>

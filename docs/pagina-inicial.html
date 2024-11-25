@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo-verde.png" type="image/x-icon">
+    <title>Página Inicial - TicketPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-pginicial">
+
+        <div class="sidebar1">
+
+            <div class="logo-pg-inicial">
+                <a href="pagina-inicial.html">
+                    <img src="img/logo-branca.png" alt="logo-img">
+                    <h2>TicketPro</h2>
+                </a>
+            </div>
+
+            <ul>
+                <li><a href="pagina-inicial.html"><i class="fas fa-home"></i>Página Inicial</a></li>
+                <li><a href="criar-chamado.html"><i class="fas fa-plus-circle"></i>Criar Chamado</a></li>
+                <li><a href="chamados.html"><i class="fas fa-ticket-alt"></i>Chamados</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content1">
+            <div class="header1">
+                <h1>Pagina Inicial</h1>
+                <div class="user-info1">
+                    <span id="user-name">Carregando...</span>
+                    <div class="user-avatar1" id="user-avatar"></div>
+                </div>
+            </div>
+
+            <div class="status-panel1">
+                <div id="content-status">
+                    <h2>Status dos Chamados</h2>
+                    <button onclick="window.location.href='criar-chamado.html';" class="bt-criar-chamado">+ Criar um Chamado</button>
+                </div>
+
+                <a href="#" class="status-item1">
+                    <span><div class="status-icon1 status-new"></div>Novo</span>
+                    <span class="status-count1">0</span>
+                </a>
+
+               <a href="#" class="status-item1">
+                    <span><div class="status-icon1 status-in-progress"></div>Em atendimento</span>
+                    <span class="status-count1">0</span>
+                </a>
+
+                <a href="#" class="status-item1">
+                    <span><div class="status-icon1 status-pending"></div>Pendente</span>
+                    <span class="status-count1">0</span>
+                </a>
+
+                <a href="#" class="status-item1">
+                    <span><div class="status-icon1 status-resolved"></div>Solucionado</span>
+                    <span class="status-count1">0</span>
+                </a>
+
+                <a href="#" class="status-item1">
+                    <span><div class="status-icon1 status-deleted"></div>Excluído</span>
+                    <span class="status-count1">0</span>
+                </a>
+
+            <h2 id="creditos">
+                Desenvolvido por <span id="codewave">Correa</span>
+            </h2>
+
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h3>O que deseja fazer?</h3>
+            <button id="logout-btn">Encerrar Sessão</button>
+            <button id="change-info-btn">Configurações</button>
+        </div>
+    </div>
+
+    
+    <script src="pagina-inicial.js" defer></script>
+    <script src="popup.js" defer></script>
+
+
+</body>
+
+</html>

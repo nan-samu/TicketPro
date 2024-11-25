@@ -1,0 +1,23 @@
+<script>
+    async function carregarChamados() {
+        const container = document.getElementById('chamados-container');
+        try {
+            const response = await fetch('/api/chamados');
+            const chamados = await response.json();
+            chamados.forEach(chamado => {
+                const chamadoDiv = document.createElement('div');
+                chamadoDiv.className = 'chamado-card';
+                chamadoDiv.innerHTML = `
+                    <h3>${chamado.titulo}</h3>
+                    <p>${chamado.descricao}</p>
+                    <strong>Status: ${chamado.status}</strong>
+                `;
+                container.appendChild(chamadoDiv);
+            });
+        } catch (error) {
+            console.error('Erro ao carregar chamados:', error);
+        }
+    }
+
+    window.onload = carregarChamados;
+</script>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo-verde.png" type="image/x-icon">
+    <title>Configurações - TicketPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-pginicial">
+        <!-- Sidebar -->
+        <div class="sidebar1">
+            <div class="logo-pg-inicial">
+                <a href="pagina-inicial.html">
+                    <img src="img/logo-branca.png" alt="logo-img">
+                    <h2>TicketPro</h2>
+                </a>
+            </div>
+
+            <ul>
+                <li><a href="pagina-inicial.html"><i class="fas fa-home"></i>Página Inicial</a></li>
+                <li><a href="criar-chamado.html"><i class="fas fa-plus-circle"></i>Criar Chamado</a></li>
+                <li><a href="chamados.html"><i class="fas fa-ticket-alt"></i>Chamados</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content1">
+            <div class="header1">
+                <h1>Configurações</h1>
+                <div class="user-info1">
+                    <span id="user-name">Carregando...</span>
+                    <div class="user-avatar1" id="user-avatar">C</div>
+                </div>
+            </div>
+1
+            <div class="config-content">
+                <h2>Alterar Informações</h2>
+                <form id="config-form">
+                    <div class="form-group">
+                        <label for="username">Nome de Usuário</label>
+                        <input type="text" id="username" name="username" minlength="3" maxlength="20" required
+                            placeholder="Novo Nome de Usuário">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Nova Senha</label>
+                        <input type="password" id="password" name="password" minlength="6" required placeholder="Nova Senha">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">Confirmar Senha</label>
+                        <input type="password" id="confirm-password" name="confirm-password" minlength="6" required
+                            placeholder="Confirme a Nova Senha">
+                    </div>
+
+                    <button type="submit" class="bt-criar-chamado">Salvar Alterações</button>
+                </form>
+            </div>
+
+            <h2 id="creditos">
+                Desenvolvido por <span id="codewave">CodeWave Stúdio</span>
+            </h2>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h3>O que deseja fazer?</h3>
+            <button id="logout-btn">Encerrar Sessão</button>
+            <button id="change-info-btn">Configurações</button>
+        </div>
+    </div>
+
+    <script src="popup.js" defer></script>
+
+    <script src="configuracoes.js" defer></script>
+    
+</body>
+
+</html>
