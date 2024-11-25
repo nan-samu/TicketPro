@@ -47,12 +47,7 @@ Para mais informações, entre em contato com o time **CodeWave**.
 Rodar no terminal do VS Code:
 
 ```bash
-    npm install express
-    npm install mongoose
-    npm install cors
-    npm install body-parser
-    npm install bcryptjs
-    npm install jsonwebtoken
+    npm install 
 ```
 
 Depois de instalar digite no terminal:
